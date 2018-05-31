@@ -32,7 +32,6 @@ const genHtmlPlugin = () => {
       filename: `${filename}/${config.pageHtmlTemplate}`,
       inject: true,
       showErrors: false,
-      chunks: ['manifest', 'vendor', filename],
     }
   })
 }
@@ -54,7 +53,6 @@ module.exports = {
             filename: '[name]/css/[name].[contenthash].css',
             chunkFilename: '[name]/css/[name].[contenthash].css',
           }]
-          // return [htmls[0]]
         })
     }
   },
