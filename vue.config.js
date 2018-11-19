@@ -30,11 +30,12 @@ const genRoutes = () => {
 const genPages = () => {
   const pages = {};
   genRoutes().forEach(route => {
-    const filename = route.split('pages/').pop();
+    const filename = route.slice(config.pagesRoot.length + 1);
     pages[filename] = {
       entry: `${route}/${config.entry}`,
       template: `${route}/${config.html}`,
-      filename: `${filename}/${config.html}`
+      filename:
+        filename === 'index' ? config.html : `${filename}/${config.html}`
     };
   });
   return pages;

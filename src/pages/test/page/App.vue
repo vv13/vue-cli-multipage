@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>Page from page2</h1>
+    <h1>Page from test/page</h1>
   </div>
 </template>
 
