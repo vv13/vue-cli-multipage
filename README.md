@@ -22,7 +22,7 @@
 首先我们安装好vue-cli脚手架，并初始化一个默认工程：
 
 ```
-$ npm i -g @vue-cli@3.0.0
+$ npm i -g @vue-cli@next
 $ vue create --default multi-page-demo
 ```
 
@@ -95,7 +95,7 @@ vue.config.js是一个可选文件，用户需要自行创建，它会被`@vue/c
 
 ## Multi-Page模式
 
-Vue CLI 3 支持多入口模式，只需要在vue.config.js中提供pages选项即可开启[多入口模式](https://cli.vuejs.org/zh/config/#pages)，我们现在将使用pages字段来重构vue.config.js：
+Vue CLI 支持多入口模式，只需要在vue.config.js中提供pages选项即可开启[多入口模式](https://cli.vuejs.org/zh/config/#pages)，我们现在将使用pages字段来重构vue.config.js：
 
 ```
 module.exports = {
