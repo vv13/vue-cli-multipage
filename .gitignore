@@ -1,5 +1,6 @@
 .DS_Store
 node_modules
+package-lock.json
 /dist
 
 # local env files
@@ -10,7 +11,7 @@ node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-yarn.lock
+pnpm-debug.log*
 
 # Editor directories and files
 .idea
@@ -19,4 +20,4 @@ yarn.lock
 *.ntvs*
 *.njsproj
 *.sln
-*.sw*
+*.sw?

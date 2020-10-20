@@ -7,6 +7,7 @@
 需要注意的是，在多页应用中子路由不支持history路由的形式，可以使用hash。
 
 ## 特性
+- 🎉 Vue 3 & @vue/cli 4，保持最新的 Vue 依赖
 - ✅ 自动生成入口，所有入口以目录的形式存放于src/pages下，并在第一层目录需包含index.html文件
 - ✅ 支持嵌套路由，如在pages目录下存在/test/page1/index.html，访问路径为：/test/page1
 - ✅ 根目录挂载，目录名为index会挂载到根目录下，而不是通过/index访问
